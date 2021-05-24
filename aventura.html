@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Argentina, mi pais</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom -->
+        <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+        <!----- icono para apple y safari -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+        <!-- Load Require CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- iconos  -->
+        <link href="assets/css/boxicon.min.css" rel="stylesheet">
+        <!-- tipo de letra -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
+        </style>
+    
+        <!-- carga CSS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/estilos.css">
+    </head>
+
+      <body>
+        <!-- Header  -->
+    
+        <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand h1" href="index.html">
+                    <i class='bx bx-world bx-sm text-dark'></i>
+                    <span class="text-dark h4">Argentina, </span>
+                    <span class="text-primary h4">mi pais</span>
+                </a>
+        
+                <!--	boton de hamburguesa -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!------------------------------------------- Opciones del Menu		-->
+                <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                    id="navbar-toggler-success">
+        
+                    <div class="flex-fill mx-xl-5 mb-2">
+                        <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="aventura.html">Aventura</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contactanos</a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <!---------------------------------------------------------Fin de las opciones del menu
+            ------------------------------------------------------------ Inicio de los iconos del menu-->
+                    <div class="navbar align-self-center d-flex">
+                        <button type="button" class="btn " style="width: 50px; height: 50px; border-radius: 50%;"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i>
+                        </button>
+        
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel"><i
+                                                class='bx bx-world bx-sm text-dark'></i> Argentina, mi pais</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <form action="#" method="GET" class=" p-1">
+                                        <div class="modal-body">
+                                            <div class="col col-md-12">
+                                                <label class="regular-400" for="mail">Ingrese su correo para recibir promociones
+                                                    y novedades:</label>
+                                            </div>
+                                            <div class="col col-md-8 py-2">
+                                                <input class="form-control" type="email" id="mail" placeholder="you@example.com"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <input type="submit" class="btn btn-primary rounded-pill regular-400"
+                                                value="Suscribirme">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <!-- Close Header -->
+
+<div class="container-lg ">
+    <div id="work_banner" class="banner-wrapper bg-light w-100 py-5">
+        <div class="banner-vertical-center-work container text-light d-flex justify-content-center align-items-center py-5 p-0">
+            <div class="banner-content col-lg-8 col-12 m-lg-auto text-center">
+                <h1 class="banner-heading h2 display-3 pb-5 semi-bold-600 typo-space-line-center">Turismo aventura</h1>
+                <h3 class="h4 pb-2 regular-400">Elit, sed do eiusmod tempor incididunt</h3>
+                <p class="banner-body pb-2 light-300">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                    commodo viverra maecenas accumsan lacus.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+<div class="container p-2">
+    <div class="row justify-content-center my-3">
+        <div class="filter-btns shadow-md rounded-pill text-center col-auto">
+            <a class="filter-btn btn rounded-pill btn-secondary border-0 m-md-2 px-md-4 active" data-filter=".todo"
+                href="#">Todos</a>
+            <a class="filter-btn btn rounded-pill btn-secondary border-0 m-md-2 px-md-4" data-filter=".acuatico"
+                href="#">Acuatico</a>
+            <a class="filter-btn btn rounded-pill btn-secondary border-0 m-md-2 px-md-4" data-filter=".terrestre"
+                href="#">Terrestre</a>
+            <a class="filter-btn btn rounded-pill btn-secondary border-0 m-md-2 px-md-4" data-filter=".aereo"
+                href="#">Aereo</a>
+        </div>
+    </div>
+    <div class="row todos">
+        <div class="col todo acuatico">
+            <div class="card mb-3">
+                <div class="row g-0 align-items-center justify-content-center">
+                    <div class="col-md-4 ">
+                        <img src="assets/img/rafting.png" width="100%">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="p-3">
+                            <h3 class="card-title text-secondary semi-bold-600">Rafting</h3>
+                            <p class="card-text" style="color: black;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum voluptatibus quibusdam id
+                                esse ea pariatur iste iusto iure est alias dignissimos dolores incidunt, consequatur
+                                unde, veniam ipsa? Quas, nostrum aperiam.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est illum voluptatum totam ab,
+                                quae praesentium. Eos accusantium in delectus ex saepe quo, nobis sunt autem. Minus eos
+                                laboriosam beatae illo?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ab minima cumque non,
+                                voluptatum, vitae mollitia perspiciatis inventore, facilis corrupti laboriosam
+                                voluptatem ad? Ut quae debitis, maiores dignissimos tempora voluptates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col todo acuatico">
+            <div class="card mb-3">
+                <div class="row g-0 align-items-center justify-content-center">
+                    <div class="col-md-4">
+                        <img src="assets/img/buceo.png" width="100%">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="p-3">
+                            <h3 class="card-title text-secondary  semi-bold-600">Buceo</h3>
+                            <p class="card-text " style="color: black;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum voluptatibus quibusdam id
+                                esse ea pariatur iste iusto iure est alias dignissimos dolores incidunt, consequatur
+                                unde, veniam ipsa? Quas, nostrum aperiam.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est illum voluptatum totam ab,
+                                quae praesentium. Eos accusantium in delectus ex saepe quo, nobis sunt autem. Minus eos
+                                laboriosam beatae illo?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ab minima cumque non,
+                                voluptatum, vitae mollitia perspiciatis inventore, facilis corrupti laboriosam
+                                voluptatem ad? Ut quae debitis, maiores dignissimos tempora voluptates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col todo terrestre">
+            <div class="card mb-3">
+                <div class="row g-0  align-items-center justify-content-center">
+                    <div class="col-md-4">
+                        <img src="assets/img/trekking.png" width="100%">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="p-3">
+                            <h3 class="card-title text-secondary semi-bold-600">Trekking</h3>
+                            <p class="card-text" style="color: black;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum voluptatibus quibusdam id
+                                esse ea pariatur iste iusto iure est alias dignissimos dolores incidunt, consequatur
+                                unde, veniam ipsa? Quas, nostrum aperiam.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est illum voluptatum totam ab,
+                                quae praesentium. Eos accusantium in delectus ex saepe quo, nobis sunt autem. Minus eos
+                                laboriosam beatae illo?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ab minima cumque non,
+                                voluptatum, vitae mollitia perspiciatis inventore, facilis corrupti laboriosam
+                                voluptatem ad? Ut quae debitis, maiores dignissimos tempora voluptates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col todo aereo">
+            <div class="card mb-3">
+                <div class="row g-0  align-items-center justify-content-center">
+                    <div class="col-md-4">
+                        <img src="assets/img/paracaidismo.png" width="100%">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="p-3">
+                            <h3 class="card-title text-secondary semi-bold-600">Paracaidismo</h3>
+                            <p class="card-text" style="color: black;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum voluptatibus quibusdam id
+                                esse ea pariatur iste iusto iure est alias dignissimos dolores incidunt, consequatur
+                                unde, veniam ipsa? Quas, nostrum aperiam.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est illum voluptatum totam ab,
+                                quae praesentium. Eos accusantium in delectus ex saepe quo, nobis sunt autem. Minus eos
+                                laboriosam beatae illo?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ab minima cumque non,
+                                voluptatum, vitae mollitia perspiciatis inventore, facilis corrupti laboriosam
+                                voluptatem ad? Ut quae debitis, maiores dignissimos tempora voluptates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col todo terrestre">
+            <div class="card mb-3">
+                <div class="row g-0  align-items-center justify-content-center">
+                    <div class="col-md-4">
+                        <img src="assets/img/caballo.png" width="100%">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="p-3">
+                            <h3 class="card-title text-secondary semi-bold-600">Cabalgatas</h3>
+                            <p class="card-text" style="color: black;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum voluptatibus quibusdam id
+                                esse ea pariatur iste iusto iure est alias dignissimos dolores incidunt, consequatur
+                                unde, veniam ipsa? Quas, nostrum aperiam.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est illum voluptatum totam ab,
+                                quae praesentium. Eos accusantium in delectus ex saepe quo, nobis sunt autem. Minus eos
+                                laboriosam beatae illo?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ab minima cumque non,
+                                voluptatum, vitae mollitia perspiciatis inventore, facilis corrupti laboriosam
+                                voluptatem ad? Ut quae debitis, maiores dignissimos tempora voluptates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col todo aereo">
+            <div class="card mb-3">
+                <div class="row g-0  align-items-center justify-content-center">
+                    <div class="col-md-4">
+                        <img src="assets/img/tirolesa.png" width="100%">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="p-3">
+                            <h3 class="card-title text-secondary semi-bold-600">Tirolesa</h3>
+                            <p class="card-text" style="color: black;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum voluptatibus quibusdam id
+                                esse ea pariatur iste iusto iure est alias dignissimos dolores incidunt, consequatur
+                                unde, veniam ipsa? Quas, nostrum aperiam.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est illum voluptatum totam ab,
+                                quae praesentium. Eos accusantium in delectus ex saepe quo, nobis sunt autem. Minus eos
+                                laboriosam beatae illo?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ab minima cumque non,
+                                voluptatum, vitae mollitia perspiciatis inventore, facilis corrupti laboriosam
+                                voluptatem ad? Ut quae debitis, maiores dignissimos tempora voluptates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+      
+
+
+  <!-- Start Footer -->
+  <footer class="bg-secondary pt-4">
+    <div class="container">
+        <div class="row py-4">
+
+            <div class="col-lg-3 col-12 align-left">
+                <a class="navbar-brand" href="index.html">
+                    <i class='bx bx-buildings bx-sm text-light'></i>
+                    <span class="text-light h5">Argentina,</span><span class="text-light h5 semi-bold-600"> mi pais</span>
+                </a>
+                <p class="text-light my-lg-4 my-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut.
+                </p>
+                <ul class="list-inline footer-icons light-300">
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="http://facebook.com/">
+                            <i class='bx bxl-facebook-square bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                            <i class='bx bxl-linkedin-square bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                            <i class='bx bxl-whatsapp-square bx-md'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h3 class="h4 pb-lg-3 text-light light-300">Empresa</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" 
+                            href="index.html">Home</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+                            href="about.html">Nosotros</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+                            href="aventura.html">Aventura</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" 
+                            href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+                            href="contact.html">Contactanos</a>
+                        </li>
+                    </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h2 class="h4 pb-lg-3 text-light light-300">Legales</h2>
+                <ul class="list-unstyled text-light light-300">
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+                        href="#">Institucional</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+                        href="#">Informacion</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+                        href="#">Condiciones Generales</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+                        href="#">RRHH</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h2 class="h4 pb-lg-3 text-light light-300">Atendemos en:</h2>
+                <ul class="list-unstyled text-light light-300">
+                    <li class="pb-2">
+                        <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" 
+                        href="tel:010-020-0340">021-2354-4568</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+                        href="mailto:info@company.com">info@company.com</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="w-100 bg-white">
+        <div class="container">
+            <div class="row pt-4">
+                <div class="col-lg-6 col-sm-12">
+                    <p class="text-lg-start text-center text-dark">
+                        © Copyright 2021 <b>Argentina, mi pais</b>. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <p class="text-lg-end text-center text-dark">
+                        Diseñado por <a rel="sponsored" class="text-decoration-none text-dark" 
+                        href="https://cursophp.com.ar/" target="_blank"><strong class="text-primary">CAC FullStack</strong></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+    <!-- End Footer -->
+
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Lightbox -->
+    <script src="assets/js/fslightbox.js"></script>
+    <script>
+        fsLightboxInstances['gallery'].props.loadOnlyCurrentSource = true;
+    </script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.todos').isotope({
+                itemSelector: '.todo',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

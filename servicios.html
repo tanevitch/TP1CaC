@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Argentina, mi pais</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom -->
+        <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+        <!----- icono para apple y safari -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+        <!-- Load Require CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- iconos  -->
+        <link href="assets/css/boxicon.min.css" rel="stylesheet">
+        <!-- tipo de letra -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
+        </style>
+        <!-- carga CSS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/estilos.css">
+    
+    </head>
+      <!-----
+      .text-primary  		azul
+      .text-secondary		gris
+      .text-success		verde
+      .text-danger		rojo
+      .text-warning		amarillo
+      .text-info			celeste
+      .text-light			blanco
+      .text-dark			negro
+      .text-muted			gris oscuro
+      .text-white			gris claro
+      -->
+      <!------------------------------------------------------------------ Fin del  HEAD -->
+      <body>
+          <!-- Header 
+          nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
+          o a otros documentos
+          -->
+      
+          <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
+          
+          <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+          navbar-light = texto negro de la letra
+          bg-white = fondo de color blanco
+          -->
+      
+              <div class="container d-flex justify-content-between align-items-center">
+              
+                  <a class="navbar-brand h1" href="index.html">
+                  <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->	
+                      <i class='bx bx-world bx-sm text-dark'></i>
+                      <!--	bx bx-buildings = icono del logo de la web: 
+                      http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+                      https://boxicons.com/
+                      -->
+      
+                 <span class="text-dark h4">Argentina, </span><span class="text-primary h4">mi pais</span></a>
+                  
+                  <!--	boton de hamburguesa --> 
+                      <button class="navbar-toggler border-0" 
+                      type="button" data-bs-toggle="collapse" 
+                      data-bs-target="#navbar-toggler-success" 
+                      aria-controls="navbarSupportedContent" 
+                      aria-expanded="false" 
+                      aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon">
+                      </span>
+                  </button>
+              <!------------------------------------------- Opciones del Menu		-->
+              <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
+              id="navbar-toggler-success">
+              
+              <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+              por un punto de interrupción principal.
+              flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+              d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+              directos en elementos flexibles
+              -->
+                              <div class="flex-fill mx-xl-5 mb-2">
+                      <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                              <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                          <!--   .navbar-nav para una navegación ligera y de altura completa 
+                             (incluida la compatibilidad con menús desplegables).-->
+                              <li class="nav-item">
+                                  <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                              <!-- px = padding y mx es el margin 
+                              rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">Nosotros</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link btn-outline-primary rounded-pill px-3" href="aventura.html">Aventura</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link btn-outline-primary rounded-pill px-3" href="servicios.html">Servicios</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contactanos</a>
+                              </li>
+                          </ul>
+                      </div>
+      
+      <!---------------------------------------------------------Fin de las opciones del menu
+      ------------------------------------------------------------ Inicio de los iconos del menu-->
+      <div class="navbar align-self-center d-flex">
+        <button type="button" class="btn " style="width: 50px; height: 50px; border-radius: 50%;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i>
+        </button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class='bx bx-world bx-sm text-dark'></i> Argentina, mi pais</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <form action="#" method="GET" class=" p-1">
+                        <div class="modal-body">
+                            <div class="col col-md-12">
+                                <label class="regular-400" for="mail">Ingrese su correo para recibir promociones y novedades:</label>
+                            </div>
+                            <div class="col col-md-8 py-2">
+                                <input class="form-control" type="email" id="mail" placeholder="you@example.com" required>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit"class="btn btn-primary rounded-pill regular-400" value="Suscribirme">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+                  </div>
+              </div>
+          </nav>
+
+<body>
+    
+    <div class="py-1" style="background-image: url(/assets/img/fondo1.png); background-repeat: no-repeat; width: 100%; background-size: cover;">
+        <form method="GET" action="#" 
+            class="col-md-6 m-5 px-4 py-3" style="background-color: white; border: 1px solid grey; border-radius: 1em;">
+            
+            <div class="my-2">
+                <label class="regular-400" style="font-size: large;" for="destino">Destino:</label>
+                <select class="form-control mt-2" id="destino" required> 
+                    <option value="">Elegí el destino..</option>
+                    <option value="1">Salta</option>
+                    <option value="2">Jujuy</option>
+                    <option value="3">Tandil</option>
+                    <option value="4">El Chalten</option>
+                    <option value="5">Bariloche</option>
+                </select>
+            </div>
+            <div class="my-2">
+                <label class="regular-400" style="font-size: large;" for="fecha_s">Fecha de salida:</label>
+                <input type="date" class="form-control mt-2" id="fecha_s" required>
+            </div>
+            <div class="row my-2 d-flex">
+                <div class="col-6 my-2">
+                    <label class="regular-400" style="font-size: large;" for="pasajeros">Pasajeros:</label>
+                    <input type="number" class="form-control mt-2" id="pasajeros" min="1" required>
+                </div>
+                <div class="col-6 my-2 text-center align-self-center">
+                    <label class="regular-400" style="font-size: large;" for="pasajeros"> Viaja por trabajo:</label>
+                    <input class="form-check-input mx-2" type="checkbox" value="" id="trabajo" >
+                    
+                </div>
+            </div>
+            <button type="submit" class="btn rounded-pill btn-primary btn-lg px-4 my-2"><i class="bx bx-search-alt bx-xs"><span class="regular-400"> Buscar</span></i></button>
+        </form>
+    </div>
+
+    <section class="mb-5">
+        <div class="container"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+            <div class="recent-work-header row text-center py-5">
+                <h2 class="col-md-6 m-auto h2 semi-bold-600 py-2">Paquetes</h2>
+            </div>
+            <div class="row gy-5 g-lg-5 mb-4" >
+
+                 <!-- Start Recent Work -->
+                 <div class="col-md-4 mb-3">
+                    <a href="#" class="card border-0 shadow-lg overflow-hidden">
+                        <img src="./assets/img/usuahia.png" style="filter: brightness(50%);" alt="Card image">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-start mb-3 ml-3 text-dark">
+                                <h3 class="text-white light-300">Finde largo <br><span class="semi-bold-600">JULIO</span></h3>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                 <!-- Start Recent Work -->
+                 <div class="col-md-4 mb-3">
+                    <a href="#" class="card border-0 shadow-lg overflow-hidden">
+                        <img src="./assets/img/brc2.png" style="filter: brightness(50%);" alt="Card image">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-start mb-3 ml-3 text-dark">
+                                <h3 class="text-white light-300">Vacaciones de <br><span class="semi-bold-600">INVIERNO</span></h3>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                 <!-- Start Recent Work -->
+                 <div class="col-md-4 mb-3" >
+                    <a href="#" class="card border-0 shadow-lg overflow-hidden">
+                        <img src="./assets/img/jujuy2.png" style="filter: brightness(50%);" alt="Card image">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-start mb-3 ml-3 text-dark">
+                                <h3 class="text-white light-300">Finde largo<br><span class="semi-bold-600">AGOSTO</span></h3>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Start Footer -->
+     <footer class="bg-secondary pt-4">
+        <div class="container" 
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <i class='bx bx-buildings bx-sm text-light'></i>
+                        <span class="text-light h5">Argentina,</span><span class="text-light h5 semi-bold-600"> mi pais</span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut.
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                <i class='bx bxl-linkedin-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='bx bxl-whatsapp-square bx-md'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Empresa</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" 
+								href="index.html">Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="about.html">Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="aventura.html">Aventura</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" 
+								href="servicios.html">Servicios</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="contact.html">Contactanos</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Legales</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Institucional</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Informacion</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Condiciones Generales</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="#">RRHH</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Atendemos en:</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="tel:010-020-0340">021-2354-4568</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+							href="mailto:info@company.com">info@company.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-white">
+            <div class="container">
+                <div class="row pt-4">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-dark">
+                            © Copyright 2021 <b>Argentina, mi pais</b>. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-dark">
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-dark" 
+							href="https://cursophp.com.ar/" target="_blank"><strong class="text-primary">CAC FullStack</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -66,18 +66,19 @@ p, a {font-weight: 400;}
 #index_banner .carousel-indicators li,
 #index_banner .carousel-indicators.active {
   background-color: #d148ba !important;
-  /* las rayas de abajo del carrousel van de color azul */
 }
 /* ITEMS CARROUSEL */
 #index_banner1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('./../img1/san-juan.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('./../img/san-juan.jpg');
+  background-position: center center; background-size: cover;
 }
 #index_banner2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('./../img1/brc.jpg');
-
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('./../img/brc.jpg');
+  background-position: center center; background-size: cover;
 }
 #index_banner3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('./../img1/catamarca.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('./../img/catamarca.jpg');
+  background-position: center center; background-size: cover;
 }
 .service-wrapper .service-footer {
   max-width: 720px;
@@ -128,7 +129,7 @@ p, a {font-weight: 400;}
 }
 /* About */
 #work_banner {
-  background-image: url('./../img/banner-bg-02.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('./../img/portada2.png');
   background-position: center center; background-size: cover;
   height: 100%;
   width: 100%;
@@ -202,6 +203,9 @@ footer a.text-light:hover {
 .contenedor-modo-viaje{
   display: flex ;
   justify-content: center ;
-  align-items: center;
 }
 
+.card-body:hover{
+  background-color: #d148ba;
+  color: white;
+}
